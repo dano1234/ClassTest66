@@ -2,11 +2,33 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Bouncing Ball</title>
+  <title>Bouncing Ball & Nano Banana 2</title>
   <link rel="stylesheet" href="style.css">
+  <!-- Firebase SDKs -->
+  <script src="https://www.gstatic.com/firebasejs/10.12.0/firebase-app-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/10.12.0/firebase-firestore-compat.js"></script>
 </head>
 <body>
   <canvas id="canvas"></canvas>
+
+  <div id="pictures-layer"></div>
+
+  <div id="ui-container">
+    <div class="header-row">
+      <h2>Nano Banana 2 on Replicate</h2>
+      <div id="user-badge">
+        <span id="user-label">You: <strong id="user-name-display"></strong></span>
+        <button id="change-name-btn" title="Change name">✎</button>
+      </div>
+    </div>
+    <div class="input-row">
+      <input type="text" id="prompt-input" placeholder="Enter prompt (e.g. a cute red panda astronaut)" autocomplete="off" />
+      <button id="submit-btn">Submit</button>
+    </div>
+    <div id="status"></div>
+  </div>
+
+  <script src="firebase-config.js"></script>
   <script src="script.js"></script>
 </body>
 </html>
