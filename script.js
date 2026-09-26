@@ -15,7 +15,7 @@ function animate() {
 
   ctx.beginPath();
   ctx.arc(x, y, radius, 0, Math.PI * 2);
-  ctx.fillStyle = "green";
+  ctx.fillStyle = "red";
   ctx.fill();
 
   if (x + radius > canvas.width || x - radius < 0) {
